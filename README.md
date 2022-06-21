@@ -1,0 +1,2 @@
+# InterpolationAnalytics
+This article focuses on interpolation subject, in particular, the interpolation of curve bootstrapping. Both linear spline and cubic spline are studied. Although there are a number of advantages to using piecewise cubic splines, there is one major drawback which leads us to go in favour of linear splines.  This drawback stems from the fact that the perturbation of one point will affect another point.
