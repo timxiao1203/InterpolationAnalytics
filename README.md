@@ -6,7 +6,7 @@ We will show a graphical illustration later of how the perturbation of one point
 
 Given a set of discrete data points  , one can use linear interpolation between successive points to build a piecewise linear interpolant of the data points  :
 
-One can then use this to approximate other points on the curve.  The advantage of linear interpolation is its simplicity and, in many cases, it provides an adequate approximation.  A disadvantage is that the approximating curve is not smooth (since the derivative is in general discontinuous at given data points) even though the real curve may in fact be smooth.  
+One can then use this to approximate other points on the curve.  The advantage of linear interpolation is its simplicity and, in many cases, it provides an adequate approximation.  A disadvantage is that the approximating curve is not smooth (since the derivative is in general discontinuous at given data points) even though the real curve may in fact be smooth. Curve construction is very useful to price derativves, such as callable exotics (see https://finpricing.com/lib/EqCallable.html)
 
 Another method of interpolation is to fit a series of linked cubic polynomials.  Consider an interpolant that allows curvature between the data points and requires the first and second derivatives to be continuous throughout the interval.  Furthermore, assume that the interpolant linking the data points is a cubic polynomial of the form subject to the following constraints:
 
@@ -18,12 +18,4 @@ A simple example below shows how three data points are linked (at x1, x2, x3) wi
 
 Each section of the curve is a cubic polynomial. First and second derivatives are equal where curves join:
 
-
-Reference:
-
-https://finpricing.com/lib/EqCallable.html
-
-https://zenodo.org/record/6613696#.YptxTagpDq4
-
-https://zenodo.org/record/6613696/files/interpolation.pdf
 
